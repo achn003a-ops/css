@@ -1,0 +1,75 @@
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: lightcoral;
+    margin: 40px 100px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.box:hover{
+    width: 400px;
+    background-color: lightblue;
+}
+
+button{
+    background-color: rgb(3, 3, 39);
+    color:beige;
+    padding: 10px 20px;
+    font-weight: bolder;
+    font-size: 18px;
+    border: 1px solid rgb(3, 3, 39);
+    margin: 20px 50px;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out
+
+}
+
+button:hover{
+   border: 1px solid rgb(3, 3, 39);
+   background-color: beige;
+   color: rgb(3, 3, 39)
+}
+
+.container{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(210, 240, 250);
+    margin: 100px;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 1s;
+}
+
+.container:hover{
+    /* transform: scale(1.05); */
+     /* transform: scalex(1.05); */
+     /* transform: translate(-20px, -20px); */
+     /* transform: translatey(-20px); */
+     /* transform: rotate(20deg); */
+     /* transform: skewx(10deg); */
+     transform: skewy(10deg);
+
+}
+
+.image-container{
+    height: 400px;
+    width: 400px;
+    margin: 100px;
+    border-radius: 40px;
+    overflow: hidden;
+
+}
+
+img{
+    transition: all0.4s ease-in-out;
+}
+
+img:hover{
+    transform: scale(1.1);
+   
+}
+
+.image-container:hover{
+    transform: translateY(-20px);
+}

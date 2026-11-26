@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.btn{
+    background-color: rgb(6, 6, 40);
+    margin: 40px 200px;
+    color: rgb(244, 229, 194);
+    font-size: 16px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+
+
+}
+
+.btn:hover{
+    background-color: rgb(244, 229, 194);
+    color:rgb(6, 6, 40);
+    box-shadow: 10px 10px 10px rgb(184, 184, 226);
+}
+
+.btn:active{
+     background-color: blanchedalmond;
+}
+
+
+.nav:link{
+    color: rgb(231, 133, 21);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav:hover{
+    text-decoration: underline;
+}
+
+
+.nav:visited{
+    color: brown;
+}
+
+.nav:active{
+    text-decoration: underline;
+}
+
+/*
+structural psuedo classes - 
+*/
+
+h2:first-child{
+    color:green;
+}
+
+h2:last-child{
+    color:aqua;
+}
+
+
+p:only-child{
+    color:chocolate
+}
+
+h2:nth-child(1){
+    color:chartreuse
+}
+
+/*
+postional psuedoclasses - 
+*/
+
+h2:last-of-type{
+    color:red;
+}
+
+h2:first-of-type{
+    color:blueviolet
+}
+
+p:nth-of-type(2){
+    color:darkcyan
+}
+
+p:nth-child(4){
+    color:cyan
+}
+
+form{
+    margin:200px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px rgb(184, 184, 226);
+    padding:30px;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+input{
+    border: none;
+    border-radius: 10px;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+input:focus{
+    outline:none;
+    box-shadow: 5px 5px 10px rgb(184, 184, 226);
+    border:none;
+}
+
+input:required{
+    background-color: rgb(253, 202, 202);
+}
+
+input:optional{
+    background-color: rgb(184, 184, 226);
+}
+
+input:valid{
+    background-color:rgb(238, 44, 44);
+}
+
+input:invalid{
+    background-color: rgb(231, 133, 21);
+}

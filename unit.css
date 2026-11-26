@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/* .section1{
+    background-color: aqua;
+    padding: 30px;
+}
+
+h1{
+    width:50vw;
+    background-color: bisque;
+}
+
+.section2{
+    background-color: azure;
+    padding: 30px;
+    height: 400px;
+}
+
+.left{
+    background-color: rgb(208, 208, 148);
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+
+.right{
+    background-color: lightcoral;
+    height: 100%;
+}
+
+img{
+    height:100%;
+    
+} */
+
+
+.container{
+    margin: 10px;
+    height: 96vh;
+    width: 98vw;
+    border: 2px solid black;
+}
+
+.left{
+    background-color: beige;;
+    float: left;
+    height: 100%;
+    width: 50%
+}
+
+.right{
+    background-color: cadetblue;
+    height: 100%;
+}

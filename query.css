@@ -1,0 +1,222 @@
+.process {
+    width: 90%;
+    max-width: 1400px;
+
+    margin: 43px auto;
+
+    padding: 50px 40px 70px;
+
+    background-color: white;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+}
+
+
+/* GREEN LABEL */
+
+.process-top {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 22px;
+
+    background-color: #e1f8e9;
+
+    color: #168347;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+/* MAIN HEADING */
+
+.process h1 {
+    margin-top: 25px;
+
+    margin-bottom: 60px;
+
+    font-size: 48px;
+
+    font-weight: 800;
+
+    color: #10172c;
+}
+
+
+/* =========================
+   THREE STEPS
+   ========================= */
+
+.process-container {
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    width: 100%;
+}
+
+
+/* =========================
+   DASHED LINE
+   ========================= */
+
+.process-container::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 50px;
+
+    left: 8%;
+
+    right: 8%;
+
+    border-top: 2px dashed #d3dbe0;
+
+    z-index: 0;
+}
+
+
+/* =========================
+   EACH STEP
+   ========================= */
+
+.process-step {
+
+    position: relative;
+
+    z-index: 1;
+
+    width: 33.33%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+/* =========================
+   CIRCLE
+   ========================= */
+
+.process-circle {
+
+    width: 100px;
+
+    height: 100px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: white;
+
+    border: 2px solid #d7f1e1;
+
+    outline: 5px solid #f1faf4;
+
+    border-radius: 50%;
+
+    color: #168347;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   STEP HEADING
+   ========================= */
+
+.process-step h2 {
+
+    margin-bottom: 12px;
+
+    font-size: 24px;
+
+    font-weight: 800;
+
+    color: #10172c;
+}
+
+
+/* =========================
+   STEP DESCRIPTION
+   ========================= */
+
+.process-step p {
+
+    width: 90%;
+
+    max-width: 400px;
+
+    margin: 0;
+
+    color: #777b82;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .process {
+        width: 92%;
+
+        padding: 40px 20px;
+    }
+
+    .process h1 {
+        font-size: 34px;
+    }
+
+    .process-container {
+
+        flex-direction: column;
+
+        gap: 50px;
+    }
+
+    .process-step {
+
+        width: 100%;
+    }
+
+    .process-container::before {
+
+        display: none;
+    }
+}

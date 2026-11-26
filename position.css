@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 60vh;
+    width: 90vw;
+    margin: 50px auto;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box{
+    height: 80%;
+    width: 20%;
+    background-color: blue;
+}
+
+/* #box1{
+    position: relative;
+    top: 20px;
+    left: 50px;
+
+} */
+
+#box1{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.call-btn{
+    color: beige;
+    background-color: crimson;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 7px 15px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+
+}
+
+h1, h2{
+    position: sticky;
+    top: 0px;
+    background-color: antiquewhite;
+}

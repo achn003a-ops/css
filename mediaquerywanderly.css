@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Forces modern browsers to use high-quality subpixel text smoothing */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Tells the engine to prioritize clear legibility over absolute speed */
+    text-rendering: optimizeLegibility;
+    background-color: #f7f6f0;
+    color: #171a16;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes move {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+
+    50% {
+        opacity: 0.5;
+
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.nav,
+header {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    justify-content: space-between;
+    padding: 18px 120px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    letter-spacing: -1px;
+}
+
+span {
+    color: rgb(255, 51, 0);
+}
+
+.nav {
+    font-family: Arial, sans-serif;
+    gap: 35px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.planatrip {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 10px 17px;
+    border-radius: 25px;
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+.label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: rgb(255, 51, 0);
+    margin-bottom: 24px;
+}
+
+.main-body {
+    display: flex;
+    margin-top: 30px;
+    gap: 90px;
+    min-height: 580px;
+}
+
+.hero-text {
+    flex: 1 1 55%;
+    margin-top: 60px;
+    animation: move 1.8s ease-in-out 1 normal;
+}
+
+.label > p {
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    word-spacing: 2px;
+    letter-spacing: 1.5px;
+}
+
+.hero-text > h1 {
+    max-width: 470px;
+    font-family: Georgia, serif;
+    font-size: 72px;
+    line-height: 1;
+    letter-spacing: -3px;
+    margin-bottom: 28px;
+}
+
+.main {
+    padding: 0 120px;
+}
+
+.hero-text > p {
+    max-width: 470px;
+    word-spacing: 1px;
+    line-height: 1.5;
+    color: rgb(66, 64, 64);
+    margin-bottom: 28px;
+}
+
+.darkbtn {
+    color: white;
+    background-color: black;
+    padding: 12px 22px;
+    border: none;
+}
+
+.whitebtn {
+    background: none;
+    padding: 12px 19px;
+    border-width: 1px;
+    border-color: rgb(66, 64, 64);
+}
+
+.btns > button {
+    border-radius: 25px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hero-img {
+    position: relative;
+    flex: 1 1 45%;
+    min-width: 0;
+    animation: move 0.8s ease-in-out 1 normal;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    min-height: 400px;
+    padding: 10px;
+    border-radius: 190px 190px 0 0;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 10px 10px 30px rgb(141, 139, 139);
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 180px 180px 0 0;
+    object-fit: cover;
+}
+
+.image-badge {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 13px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.image-badge i {
+    color: #ed552f;
+}
+
+.image-badge small {
+    color: #777;
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.rating {
+    top: 22px;
+    right: 20px;
+}
+
+.location {
+    bottom: 24px;
+    left: 20px;
+}
+
+.round-action {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 34px;
+    height: 34px;
+    border: 0;
+    border-radius: 50%;
+    color: #fff;
+    background: #ed552f;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Georgia, serif;
+    margin-bottom: 16px;
+}
+
+.line > h1 {
+    font-weight: 600;
+}
+
+.line > h1 > span {
+    font-style: italic;
+}
+
+.places > p {
+    margin-bottom: 20px;
+    color: rgb(255, 51, 0);
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    word-spacing: 2px;
+    letter-spacing: 1.5px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.places {
+    padding-inline: 120px;
+}
+
+.mount,
+.city,
+.beach {
+    box-shadow: 1px 1px 20px rgb(137, 137, 137);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 30%;
+}
+
+.cards h2 {
+    font-family: Georgia, serif;
+    font-weight: bolder;
+    margin-top: 25px;
+}
+
+.card-img1 {
+    background: url("mountain.jfif");
+    height: 200px;
+    width: 100%;
+    background-size: contain;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-img2 {
+    background: url("beach.avif");
+    height: 200px;
+    background-size: contain;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-img3 {
+    background: url("city.jpg");
+    height: 200px;
+    background-size: contain;
+    border-radius: 15px 15px 0 0;
+}
+
+.cards p {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: rgb(66, 64, 64);
+    font-weight: 600;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards h2 {
+    font-size: 21px;
+}
+
+.card-text {
+    padding-inline: 18px;
+    background-color: white;
+
+}
+
+.quotes {
+    margin-block: 70px;
+    background-color: rgb(0, 47, 0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+}
+
+.qoute {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote h1 {
+    margin: 0;
+    line-height: 1;
+    font-family: Georgia, serif;
+    font-size: 39px;
+}
+
+.middle,
+.quote p {
+    text-align: center;
+}
+
+.quote span {
+    font-style: italic;
+}
+
+.info,
+.remind {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+}
+
+@media (max-width: 1024px){
+    header{
+        padding: 18px 50px;
+    }
+    .hero-text{
+        display: none;
+    }
+    .cards{
+        flex-wrap: wrap;
+    }
+    .mount, .beach, .city{
+        width: 45%;
+
+    }
+}
+@media (max-width: 768px){
+    .nav{
+        display: none;
+    }
+     .mount, .beach, .city{
+        width: 90%;
+
+    }
+    .main{
+        padding: 0 30px;
+    }
+
+}
+@media (max-width: 480px){
+    .places .line p{
+        display: none;
+    }
+    
+    
+
+}

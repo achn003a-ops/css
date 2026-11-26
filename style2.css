@@ -1,0 +1,94 @@
+/* #H1{
+    color: rgba(87, 55, 55);
+    background-color: midnightblue;
+    text-align: center;
+    font-style:italic;
+    height: 100px;
+    width: 400px;
+    /* margin: 10px 20px 30px 40px; */
+    /* margin-top: 70px;
+    padding: 10px 20px 30px 40px; */
+/* } */ 
+
+/* #paragraph{
+    color: rgb(185, 50, 50);
+    background-color: #011101;
+    width: 200px;
+    margin: 10px 20px 30px 40px;
+} */
+
+/* #btn{
+    color: rgb(185, 50, 50);
+    background-color:aqua;
+    height: 80px;
+    width: 100px;
+    margin-bottom: 50px;
+    /* border-color: black;
+    border-width: 2px;
+    border-style: double;
+ */
+ /* border: black 1px solid */
+/* } */ 
+
+/* #link{
+     color: rgb(185, 50, 50);
+    background-color:rgb(96, 219, 219);
+    height:100px;
+    width:80px;
+    margin: 10px 20px;
+} */
+
+/* div{
+    height: 200px;
+    width: 200px;
+    background-color: lightblue;
+} */
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+height: 200px;
+width: 400px;
+background-color: lightgrey;
+padding: 20px;
+border: 2px solid black;
+box-sizing: border-box;
+/* border-radius: 10px 20px 30px 40px;     is moves clock wise */
+border-top-right-radius: 10px;
+}
+
+#btn{
+    height:40px;
+    width: 80px;
+    padding: 20px;
+    background-color:blue;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+
+section{
+    height: 679px;
+    width: 1069px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.511)), url("pexels-colourzony-32263431.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+ .section_2 {
+    height: 480px;
+    width: 1240px;
+
+    background: linear-gradient(
+        120deg,
+        rgb(111,26,26),
+        rgb(105,42,42),
+        rgb(233,130,147)
+    );
+} 
